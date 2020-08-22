@@ -1,0 +1,570 @@
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Catamaran', sans-serif;
+    //font-family: 'Muli', sans-serif;
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 870px;
+    }
+}
+
+
+h1 {
+    text-align: center;
+    padding-top: 85px;
+    color: #22a6b3;
+    font-size: 5.9vh;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #363636;
+    font-size: 4.9vh;
+}
+
+p {
+    color: #dfe8ee;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 3.2vh;
+
+}
+
+
+hr {
+    border-top: 4px solid rgba(54, 173, 176, 1);
+    width: 100px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+
+/*----NAVBAR-----------------------------------*/
+#navbar-tendeza {
+    background-color: #22a6b3;
+    padding-top: 6px;
+    padding-bottom: 1px;
+}
+
+ul.nav a:hover {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+
+/*--Hamburgermenu--*/
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+}
+
+#nav-icon1 {
+    width: 48px;
+    height: 36px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #f0f9ff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 11px;
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 22px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+
+/*-----START_SCREEN-------------------------------------*/
+.intro {
+    height: 100%;
+    width: 100%;
+    background: url("images/intro_content/start_image_v2.jpg");
+    display: table;
+    top: 0;
+    background-size: cover;
+    background-position: 0px top;
+}
+
+/* START_SCREEN all content in start_image */
+.content {
+    text-align: right;
+    padding-top: 23%;
+    //padding-right: 12%;
+}
+
+/* START_SCREEN content word "Herzlich willkommen" */
+#blumen {
+    color: #a3abb0;
+    font-size: 2.6vw;
+}
+
+#welcome-word {
+    color: #a3abb0;
+    font-size: 2.4vw;
+    font-family: 'Muli', sans-serif;
+    padding-right: 5%;
+}
+
+/* START_SCREEN logo in start_image */
+#logo {
+    width: 16vw;
+    height: auto;
+    padding-top: 2.0vw;
+    padding-bottom: 2.0vw;
+
+}
+
+/* START_SCREEN scroll-down icon */
+#scroll-down {
+    width: 2.3vw;
+    height: auto;
+}
+
+.rubberBand {
+    animation-name: rubberBand;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#scroll-down:hover {
+    animation-name: none;
+    transition: transform .3s;
+    transform: scale(1.2);
+}
+
+#scroll-down-link {
+    padding-right: 2.7%;
+}
+
+.background-pannel {
+    background-color: rgba(229, 229, 229, 0.89);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 140px;
+    //margin-bottom: 400px;
+    //padding: 24px;
+    //width: 500px;
+
+}
+
+#mittag-begrüssung {
+    font-size: 5.9vh;
+}
+
+
+@media screen and (max-device-width: 1025px) {
+
+    .intro {
+        background-position: -300px top;
+    }
+
+    /* START_SCREEN all content in start_image */
+    .content {
+        //padding-top: 90%;
+        //padding-top: 70vw;
+        position:absolute;
+        bottom: 12vw;
+        width: 100%;
+        text-align: center;
+        padding-right: 0%;
+        //background-color: red;
+
+    }
+
+    /* Background for content */
+    .background-pannel {
+        background-color: rgba(229, 229, 229, 0.89);
+        padding-top: 24px;
+        padding-bottom: 26px;
+        padding-right: 0px;
+    }
+
+    /* START_SCREEN content word "Herzlich willkommen" */
+    #welcome-word {
+        color: #80868a;
+        font-size: 6.7vw;
+    }
+
+
+    /* START_SCREEN logo in start_image */
+    #logo {
+        width: 62vw;
+        height: auto;
+        padding-top: 3.7vw;
+        padding-bottom: 5.8vw;
+    }
+
+    /* START_SCREEN scroll-down icon */
+    #scroll-down {
+        content: url("images/intro_content/scroll_down_dark.png");
+    / / width: 50 px;
+        width: 10vw;
+        height: auto;
+
+    }
+
+    #scroll-down:hover {
+        animation-name: none;
+        transition: transform .3s;
+        transform: scale(1.2);
+    }
+
+    #scroll-down-link {
+        padding-right: 5%;
+    }
+
+    #mittag-begrüssung {
+        font-size: 3.0vh;
+    }
+
+}
+
+
+/*-----INTRO-TEXT---------------------------------------------*/
+#intro-text-section {
+    background: #353535;
+    padding-bottom: 45px;
+}
+
+
+#intro-text-section h1 {
+    color: #22a6b3;
+}
+
+#intro-text-section p {
+    margin-bottom: 35px;
+}
+
+
+
+
+/*-----SORTIMENT--------------------*/
+#sortiment-section {
+    background: #F2F2F0;
+    padding-bottom: 5%;
+}
+
+.logo-size img {
+    width: 40%;
+    padding: 10px;
+}
+
+/*--Animations--*/
+.card-left {
+    animation-name: moveFromLeft;
+    animation-delay: 0.2s;
+    padding-top: 40px;
+   // padding-bottom: 50px;
+
+}
+
+@keyframes moveFromLeft {
+    from {
+        left: -8%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+.card-right {
+    animation-name: moveFromRight;
+    padding-top: 40px;
+    //padding-bottom: 50px;
+}
+
+@keyframes moveFromRight {
+    from {
+        left: 8%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+
+/*-----Shop Landscape------------------------*/
+.shop-landscape {
+    background-image: url("images/show_shop/team14.jpg");
+
+    /* Set a specific height */
+    height: 540px;
+
+    /* Create parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (max-device-width: 1025px) {
+
+    .shop-landscape {
+        background-image: url("images/show_shop/team12_mobile.jpg");
+        background-size: 120%;
+    }
+}
+
+
+/*-----DESSOUS-PASSFORMEN--------------------*/
+#dessous-passformen-section {
+    background: #353535;
+    padding-bottom: 6%;
+}
+
+#dessous-passformen-section h1 {
+    color: #22a6b3;
+}
+
+#dessous-passformen-section p {
+    margin-bottom: 35px;
+}
+
+.card p {
+    font-size: 27px;
+    color: #363636;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: left;
+
+}
+
+/*-----TEAM-----------------------------*/
+#team-section {
+    background: #F2F2F0;
+    padding-bottom: 55px;
+}
+
+#team-section img {
+    padding-bottom: 15px;
+}
+
+/*-----Geschenke-----------------------------*/
+#geschenke-section {
+    background: #353535;
+    padding-bottom: 6%;
+}
+
+#geschenke-section p {
+    color: #4f4f4f;
+}
+
+#geschenke-section div {
+    text-align: center;
+}
+
+
+#geschenke-section img {
+    margin-top: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+
+}
+
+/*enables slow and dynamic transformation */
+.zoom {
+    position: relative;
+
+}
+
+.zoom img {
+    transition: transform .3s;
+
+}
+
+.zoom :not(img) {
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color: #3a3a3a;
+    text-align: center;
+    /*Text over Picture size*/
+    font-size: calc(2.4vw + 2.4vh);
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+
+.zoom:hover img {
+    -ms-transform: scale(1.02); /* IE 9 */
+    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    transform: scale(1.02);
+    filter: blur(1px);
+    content: url("images/geschenke/Group4.jpg");
+}
+
+.zoom h2 {
+    top: 52%;
+    color: #656565;
+    right: 25%;
+    width: 50%;
+
+}
+
+.zoom:hover :not(img) {
+    opacity: 1;
+}
+
+
+
+
+/*-----ÖFFNUNGSZEITEN-----------------------------*/
+#offnungszeiten-section {
+    background: #F2F2F0;
+    padding-bottom: 55px;
+}
+
+#offnungszeiten-section h1 {
+    color: #22a6b3;
+}
+
+#offnungszeiten-section div {
+    text-align: center;
+}
+
+#offnungszeiten-section p {
+    color: #363636;
+    font-weight: bold;
+    font-size: 2.6vh;
+}
+
+
+
+/*-----KONTAKT-------*/
+#kontakt-team-section {
+    background: #353535;
+    padding-bottom: 55px;
+}
+
+#kontakt-team-section input, #kontakt-team-section textarea {
+    background: transparent;
+    color: #37B7BA;
+    font-size: 20px;
+}
+
+.form-control:focus {
+    border-color: #37B7BA;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(55, 183, 186, 0.6);
+}
+
+#submit-button {
+    color: white;
+    font-size: 20px;
+    background-color: #22a6b3;
+    border-color: #22a6b3;
+    margin-bottom: 45px;
+
+}
+
+#submit-button:hover {
+    color: white;
+    background-color: #41c7ca;
+
+}
+
+/*-----Team-------*/
+
+#kontakt-team-section img {
+    padding-bottom: 10px;
+}
+
+
+/*-----FOOTER-----------------------------*/
+#footer-adresse {
+    background: #22a6b3;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#footer-adresse ul {
+    justify-content: space-around;
+}
+
+#footer-adresse p {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #f6f6f4;
+    //font-size: 2vh;
+    font-size: 16px;
+}
+
+#email-ad {
+    color: #f6f6f4;
+    text-decoration: underline;
+}
+
+#copyright {
+    padding: 8px;
+    background: #1f97a3;
+    font-size: 14px;
+    color: #dfdfdf;
+}

@@ -1,7 +1,7 @@
 # Website-TendenzaDonna
 
 ## Job
-As a freelance project, I developed an informative company website. 
+As a freelance project, I developed an informative company website for TendenzaDonna, a small lingerie shop in Zofingen, Switzerland. 
 
 ## Technologien
 - Javascript
@@ -12,8 +12,7 @@ As a freelance project, I developed an informative company website.
 - Bootstrap
 
 ## Live Website
-TendenzaDonna is a small lingerie shop in Zofingen (Switzerland).
-Check out the website live at: http://tendenzadonna.ch/
+Check out live at: http://tendenzadonna.ch/
 
 ![Screenshot Website](Screenshot.jpg)
 
